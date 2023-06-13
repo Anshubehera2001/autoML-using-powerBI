@@ -1,0 +1,32 @@
+#Run these codes in anaconda terminal
+conda create --name myenv python=3.7
+pip install pycaret==2.0
+
+# import regression module
+from pycaret.regression import *
+# init setup
+reg1 = setup(data=dataset, target = 'charges', silent = True, html = False)
+# compare models
+best_model = compare_models()
+# finalize best model
+best = finalize_model(best_model)
+# save best model
+save_model(best, 'c:/users/moezs/best-model-power')
+# return the performance metrics df
+dataset = pull()
+
+# import regression module
+from pycaret.regression import *
+# init setup
+reg1 = setup(data=dataset, target = 'charges', silent = True, html = False)
+# compare models
+top5 = compare_models(n_select = 5)
+results = pull()
+# tune top5 models
+tuned_top5 = [tune_model(i) for i in top5]
+# select best model
+best = automl()
+# save best model
+save_model(best, 'c:/users/moezs/best-model-power')
+# return the performance metrics df
+dataset = results
