@@ -1,0 +1,4 @@
+# autoML-using-powerBI
+AutoML in Power BI using PyCaret 2.0 allows users to automate the machine learning workflow directly within Power BI. With PyCaret's simplified API, users can perform various tasks such as data preprocessing, feature engineering, model training, hyperparameter tuning, model selection, and deployment. By leveraging PyCaret's AutoML capabilities, Power BI users can easily build and compare multiple machine learning models without writing extensive code. PyCaret takes care of the heavy lifting, enabling users to focus on interpreting the results and making informed decisions. AutoML in Power BI using PyCaret 2.0 provides a user-friendly and efficient way to incorporate machine learning into Power BI reports, empowering users to harness the predictive power of their data and drive data-driven insights and decision-making.
+
+The python scripts used in the project is also provided.
